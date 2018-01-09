@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class = "container">
+        <div class = "row">
+            <h1 style="text-align: center;"><%= customer.first_name %> <%= customer.last_name %></h1>
+            <div style="width: 30%; margin: 25px auto;">
+            <p><%= customer.email %></p>
+            
+            <p><%= customer.agreement_exp %></p>
+            <p>
+               <a class="btn btn-lg btn-default btn-primary btn-block" href="/customers/:id/email">Compose Email</a> 
+            </p>
+
+            <p><a href="/">Back to Main</a></p>
+             
+
+            </div>
+            
+        </div>
+</div>
+
+<% include partials/footer %>
+

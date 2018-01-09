@@ -1,0 +1,46 @@
+<% include partials/header %>
+
+
+    <div class = "container">
+        <div class = "row">
+            <h1 style="text-align: center;">Compose and Send Email</h1>
+            <div style="width: 60%; margin: 25px auto;">
+                <form action="/send-email" method="POST">
+                    <div class="form row">
+                        <div class="col-sm-12">
+                            <label for="to" class="col-sm-1 col-form-label">To</label>
+                                <input type="email" class="form-control" style="margin: 0 0 6px 0;" name="to">
+                        </div>
+                    </div>
+                
+                    <div class="form row">
+                        <div class="col-sm-12">
+                            <label for="subject" class="col-sm-1 col-form-label">Subject</label>
+                                <input type="text" class="form-control" style="margin: 0 0 6px 0;" name="subject">
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="col-sm-12">
+                            <label for="body" class="col-sm-1 col-form-label">Body</label>
+                                <textarea cols="5" rows="8"class="form-control" style="margin: 0 0 10px 0;" name="body"></textarea>
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="col-sm-12">
+                            <p>
+                                <button type="submit" class="btn btn-success">Send</button>
+                            
+                                <a href="/customers" class="btn btn-secondary" role="button">Cancel</a>
+                            </p>
+                            
+                        </div>
+                            
+  
+                    </div>
+                </form>
+                <a href="/">Back to Main</a>
+            </div>
+        </div>
+    </div>
+
+<% include partials/footer %>
